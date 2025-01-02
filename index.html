@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Css links -->
+    <link rel="stylesheet" href="styles.css">
+
+  <!-- fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <div class="overlay">
+  </div>
+  <header>
+    <div class="banner">
+      <a href="/" class="logo">
+        <img src="./images/logo.svg" alt="Company logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Open menu">
+        <img src="./images/icon-menu.svg" alt=" The clickable menu icon" aria-hidden="true" onclick="toggleMenu()"/>
+      </button>  
+    </div>
+    <div class="menu-expanded">
+      <button class="menu-close" aria-label="Close menu" onclick="closeMenu()">
+        <img src="./images/icon-close-menu.svg" alt=" The clickable close icon" aria-hidden="true" />
+      </button>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Features <img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-down"></a></li>
+          <li><a href="#" class="nav-link">Company
+            <img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-down">
+          </a></li>
+          <li><a href="#" class="nav-link">Careers</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+      <div class="login-register">
+        <button class="btns login">
+          <a href="#" class="btns-link">Login</a>
+        </button>
+        <button class="btns register">
+          <a href="#" class="btns-link ">Register</a>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="desktop-nav">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">Features</a></li>
+          <li><a href="#" class="nav-link">Company</a></li>
+          <li><a href="#" class="nav-link">Careers</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+      <div class="login-register">
+        <button>
+          <a href="#" class="login">Login</a>
+        </button>
+        <button>
+          <a href="#" class="register">Register</a>
+        </button>
+        
+      </div>
+    </div>
+  
+    <img
+      src="./images/image-hero-mobile.png"
+      alt="Hero illustration for the website"
+      class="mobile-hero-image"
+    />
+  </header>
+
+  <main>
+    <section class="hero-content">
+      <h1 class="heading">Make remote work</h1>
+      <p class="main-paragraph">
+        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+      </p>
+      <button class="cta-btn" >
+        <a href="#" class="cta-link" aria-label="Learn more about making remote work">
+          Learn more
+        </a>
+      </button>
+      
+    </section>
+  
+    <section class="clients">
+      <!-- <h2 class="visually-hidden">Our Clients</h2> -->
+      <div class="clients-logos">
+       
+          <img src="./images/client-databiz.svg" alt="Databiz" />
+      
+        
+          <img src="./images/client-audiophile.svg" alt="Audiophile" />
+        
+          <img src="./images/client-meet.svg" alt="Meet" />
+        
+          <img src="./images/client-maker.svg" alt="Maker" />
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="./images/logo.svg" alt="Company logo" class="footer-logo">
+      <div class="social-icons">
+        
+      </div>
+      <p>
+        &copy; 2025 snap. All rights reserved.
+      </p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">farjiya</a>.
+    </div>
+  </footer>
+
+  <script>
+    // select the menu to be expanded
+    const offCanvasMenu = document.querySelector(".menu-expanded");
+      //select the close button
+      const closeButton = document.querySelector(".menu-close");
+      const overlay = document.querySelector('.overlay');
+    function toggleMenu() {
+      
+      // display the menu
+      offCanvasMenu.style.display = "block";
+      overlay.classList.add('active');
+    }
+    function closeMenu() {
+      offCanvasMenu.style.display = "none";
+      overlay.classList.remove('active');
+    }
+  </script>
+  
+</body>
+</html>

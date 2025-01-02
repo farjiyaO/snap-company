@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almostBlack: hsl(0, 0%, 8%);
+}
+body{
+    font-family: "Epilogue", serif;
+}
+/* mobile first design */
+.banner{
+    padding: 15px 5px;
+    justify-content:space-between;
+    align-items: center;
+    display: flex;
+    margin: 10px;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+}
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+.menu-toggle{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    align-items: flex-end;
+}
+.menu-expanded{
+    width: 75%;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    padding: 20px;
+    left: 25%;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.menu-close{
+    position: relative;
+    left: 90%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.nav-list li{
+    margin: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+.nav-link{
+    color: var(--mediumGray);
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.arrow-down{
+    position: relative;
+    top: 10%;
+}
+.login-register{
+    padding: 20px;
+}
+.btns{
+    border: none;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 95%;
+    background-color: white;
+}
+.btns-link{
+    color: var(--mediumGray);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.register{
+    border: 2px solid var(--mediumGray);
+}
+
+
+.mobile-hero-image{
+    width: 100%;
+    margin-bottom: 10% ;
+}
+.hero-content{
+    padding: 5px;
+}
+.heading{
+    margin: 5%;
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--almostBlack);
+}
+.main-paragraph{
+    text-align: center;
+    color: var(--mediumGray);
+    line-height: 1.5rem;
+    margin-top: 10px;
+}
+.cta-btn{
+    background-color: var(--almostBlack);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    left: 30%;
+}
+.cta-link{
+    color: var(--almostWhite);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.clients{
+    margin: 40px 0 80px 0;
+}
+.clients-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-logos img{
+    width: 20%;
+    margin: 0 8px;
+}
+.desktop-nav{
+    display: none;
+}
+footer{
+    background-color: var(--mediumGray);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+.footer-content{
+    margin-bottom: 10%;
+}
