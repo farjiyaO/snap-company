@@ -35,6 +35,17 @@ body{
     opacity: 1;
     visibility: visible;
 }
+
+/* show andhide classes 
+this classes will be used to show and hide elements on different screens
+*/
+.show{
+    display: block;
+}
+/* .hide{
+    display: none;
+} */
+/*  */
 .menu-toggle{
     background-color: white;
     border: none;
@@ -60,6 +71,22 @@ body{
     border: none;
     background-color: white;
     cursor: pointer;
+}
+.dropdown-menu{
+    display: none;
+}
+.dropdown-link{
+    color: var(--mediumGray);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.icon-img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.show{
+    display: block;
 }
 .nav-list li{
     margin: 20px;
