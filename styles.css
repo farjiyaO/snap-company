@@ -85,8 +85,14 @@ this classes will be used to show and hide elements on different screens
     height: 16px;
     margin-right: 10px;
 }
+.arrow-up{
+    background-image: url('./images/icon-arrow-up.svg');
+}
 .show{
     display: block;
+}
+.hide{
+    display: none;
 }
 .nav-list li{
     margin: 20px;
