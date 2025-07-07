@@ -6,8 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Css links -->
+  <!-- CSS links -->
     <link rel="stylesheet" href="styles.css">
+  
+  <!-- JS links -->
+  <script src="script.js"></script>
 
   <!-- fonts links-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,115 +36,152 @@
       <a href="/" class="logo">
         <img src="./images/logo.svg" alt="Company logo" />
       </a>
+      <div class="mobile-nav">
       <button class="menu-toggle" aria-label="Open menu">
         <img src="./images/icon-menu.svg" alt=" The clickable menu icon" aria-hidden="true" onclick="toggleMenu()"/>
       </button>  
-    </div>
-    <div class="menu-expanded">
-      <button class="menu-close" aria-label="Close menu" onclick="closeMenu()">
-        <img src="./images/icon-close-menu.svg" alt=" The clickable close icon" aria-hidden="true" />
-      </button>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
+      </div>
+      <div class="menu-expanded">
+        <button class="menu-close" aria-label="Close menu" onclick="closeMenu()">
+          <img src="./images/icon-close-menu.svg" alt=" The clickable close icon" aria-hidden="true" />
+        </button>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              
+              <a href="#" class="nav-link">Features 
+                <!-- this arrow needs to be interactive when expanded ^ and when close v -->
+                <span class="expanded-icon ">
+                  <img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
+                </span>
+              </a>
             
-            <a href="#" class="nav-link">Features 
-              <!-- this arrow needs to be interactive when expanded ^ and when close v -->
-               <span class="expanded-icon ">
-                <img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
-               </span>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-todo.svg" alt="todo list icon" class="icon-img"> Todo List </a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-calendar.svg" alt="calendar icon" class="icon-img">Calender</a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-reminders.svg" alt=" reminders icon" class="icon-img">Reminders</a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-planning.svg" alt="Planning icon" class="icon-img">Planning</a></li>
+              </ul>
+            
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Company
+              <span class="expanded-icon"><img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
+                </span>
             </a>
-           
             <ul class="dropdown-menu">
-              <li><a href="#" class="dropdown-link"> <img src="./images/icon-todo.svg" alt="todo list icon" class="icon-img"> Todo List </a></li>
-              <li><a href="#" class="dropdown-link"> <img src="./images/icon-calendar.svg" alt="calendar icon" class="icon-img">Calender</a></li>
-              <li><a href="#" class="dropdown-link"> <img src="./images/icon-reminders.svg" alt=" reminders icon" class="icon-img">Reminders</a></li>
-              <li><a href="#" class="dropdown-link"> <img src="./images/icon-planning.svg" alt="Planning icon" class="icon-img">Planning</a></li>
+              <li><a href="#" class="dropdown-link"> History </a></li>
+              <li><a href="#" class="dropdown-link">Our Team</a></li>
+              <li><a href="#" class="dropdown-link">Blog</a></li>
             </ul>
-          
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Company
-            <span class="expanded-icon"><img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
-               </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="dropdown-link"> History </a></li>
-            <li><a href="#" class="dropdown-link">Our Team</a></li>
-            <li><a href="#" class="dropdown-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Careers</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
           </ul>
-        </li>
-          <li><a href="#" class="nav-link">Careers</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </nav>
-      <div class="login-register">
-        <button class="btns login">
-          <a href="#" class="btns-link">Login</a>
-        </button>
-        <button class="btns register">
-          <a href="#" class="btns-link ">Register</a>
-        </button>
-      </div>
+        </nav>
+        <div class="login-register">
+          <button class="btns login">
+            <a href="#" class="btns-link">Login</a>
+          </button>
+          <button class="btns register">
+            <a href="#" class="btns-link ">Register</a>
+          </button>
+        </div>
 
-    </div>
-
-    <div class="desktop-nav">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link">Features</a></li>
-          <li><a href="#" class="nav-link">Company</a></li>
-          <li><a href="#" class="nav-link">Careers</a></li>
-          <li><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </nav>
-      <div class="login-register">
-        <button>
-          <a href="#" class="login">Login</a>
-        </button>
-        <button>
-          <a href="#" class="register">Register</a>
-        </button>
-        
       </div>
+      <div class="desktop-nav">
+        <nav class="menus">
+          <ul class="nav-list">
+            <li class="nav-item">
+              
+              <a href="#" class="nav-link">Features 
+                <!-- this arrow needs to be interactive when expanded ^ and when close v -->
+                <span class="expanded-icon ">
+                  <img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
+                </span>
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-todo.svg" alt="todo list icon" class="icon-img"> Todo List </a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-calendar.svg" alt="calendar icon" class="icon-img">Calender</a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-reminders.svg" alt=" reminders icon" class="icon-img">Reminders</a></li>
+                <li><a href="#" class="dropdown-link"> <img src="./images/icon-planning.svg" alt="Planning icon" class="icon-img">Planning</a></li>
+              </ul>
+            
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Company
+              <span class="expanded-icon"><img src="./images/icon-arrow-down.svg" alt=" clickable arrow that expands to more options" class="arrow-icon">
+                </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-link"> History </a></li>
+              <li><a href="#" class="dropdown-link">Our Team</a></li>
+              <li><a href="#" class="dropdown-link">Blog</a></li>
+            </ul>
+          </li>
+          
+            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+        <div class="login-register">
+          <button class="btns login">
+            <a href="#" class="btns-link">Login</a>
+          </button>
+          <button class="btns register">
+            <a href="#" class="btns-link ">Register</a>
+          </button>
+        </div>
+
+      </div>
+      <span class="expanded-menu__desktop" id="expanded-menu__desktop"></span>
     </div>
-  
-    <img
-      src="./images/image-hero-mobile.png"
-      alt="Hero illustration for the website"
-      class="mobile-hero-image"
-    />
+    
   </header>
 
   <main>
-    <section class="hero-content">
-      <h1 class="heading">Make remote work</h1>
-      <p class="main-paragraph">
-        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
-      </p>
-      <button class="cta-btn" >
-        <a href="#" class="cta-link" aria-label="Learn more about making remote work">
-          Learn more
-        </a>
-      </button>
-      
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="hero-content col">
+          <picture>
+            <!-- mobile -->
+            <source media="(max-width:767px)" srcset="./images/image-hero-mobile.png">
+
+            <!-- desktop -->
+             <source media=" (min-width:768px)" srcset="./images/image-hero-desktop.png">
+
+            <img src="./images/image-hero-mobile.png" alt="Hero illustration for the website" class="mobile-hero-image"/>
+          </picture>
+        </div>
   
-    <section class="clients">
-      <!-- <h2 class="visually-hidden">Our Clients</h2> -->
-      <div class="clients-logos">
-       
-          <img src="./images/client-databiz.svg" alt="Databiz" />
-      
-        
-          <img src="./images/client-audiophile.svg" alt="Audiophile" />
-        
-          <img src="./images/client-meet.svg" alt="Meet" />
-        
-          <img src="./images/client-maker.svg" alt="Maker" />
-        
+        <div class="clients col">
+          <div class="text-content">
+            <h1 class="heading">Make remote work</h1>
+            <p class="main-paragraph">
+              Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="cta-btn" >
+              <a href="#" class="cta-link" aria-label="Learn more about making remote work">
+                Learn more
+              </a>
+            </button>
+          </div>
+          <div class="clients-logos">
+            
+                <img src="./images/client-databiz.svg" alt="Databiz" />
+            
+              
+                <img src="./images/client-audiophile.svg" alt="Audiophile" />
+              
+                <img src="./images/client-meet.svg" alt="Meet" />
+              
+                <img src="./images/client-maker.svg" alt="Maker" />
+              
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
@@ -160,47 +200,7 @@
     </div>
   </footer>
 
-  <script>
-    // select the menu to be expanded
-    const offCanvasMenu = document.querySelector(".menu-expanded");
-      //select the close button
-      const closeButton = document.querySelector(".menu-close");
-      const overlay = document.querySelector('.overlay');
-      const arrowIcon = document.querySelectorAll(".arrow-icon")
-      console.log(arrowIcon)
-      console.log(arrowIcon[0].src)
-
-      function toggleMenu() {
-      // display the menu
-      offCanvasMenu.style.display = "block";
-      overlay.classList.add('active');
-    }
-    function closeMenu() {
-      offCanvasMenu.style.display = "none";
-      overlay.classList.remove('active');
-    }
-      
-      //select the nav-item for the dropdown menu
-      const navItem = document.querySelectorAll(".nav-item");
-      console.log("selects the expandable nav", navItem);
-
-      
-           
-    for (let i = 0; i < navItem.length; i++) {
-      navItem[i].addEventListener('click', function(event) {
-        // console.log(event.target);
-        const dropdownMenu = event.target.nextElementSibling;
-         console.log(dropdownMenu);
-         dropdownMenu.classList.toggle('show');
-         arrowIcon[i].src = dropdownMenu.classList.contains('show')? "./images/icon-arrow-up.svg" : "./images/icon-arrow-down.svg" 
-        
-    });
-    
-    }
-   
-    
-  </script>
-  
+ 
 </body>
 </html>
 

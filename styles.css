@@ -42,10 +42,6 @@ this classes will be used to show and hide elements on different screens
 .show{
     display: block;
 }
-/* .hide{
-    display: none;
-} */
-/*  */
 .menu-toggle{
     background-color: white;
     border: none;
@@ -193,4 +189,115 @@ footer{
 }
 .footer-content{
     margin-bottom: 10%;
+}
+
+/* desktop design */
+@media screen and (min-width:800px){
+    .mobile-nav{
+        display: none;
+    }
+    .banner{
+        justify-content:flex-start;
+    }
+
+    .desktop-nav{
+        display: block;
+        display: flex;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .nav-list{
+        display: flex;  
+        margin-right: 8px;
+    }
+    .nav-item:hover{
+        cursor:pointer;
+        font-weight: bold;
+    }
+    .menus{ 
+        width: 80%;
+    }
+    .login-register{
+        display: flex;
+        gap: 20px;
+        width: 30%;
+        align-items: flex-end;
+    }
+    .dropdown-menu{
+        background-color: white;
+        width: 13%;
+        position: absolute;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px rgb(128, 128, 128);
+    }
+    .dropdown-menu li{
+        margin:10px;
+        padding:5px;
+    }
+    .btns{
+    border: none;
+    display: block;
+    margin: 10px auto;
+    padding: 12px 12px;
+    border-radius: 10px;
+    width: 95%;
+    background-color: white;
+    }
+    .btns:hover{
+    cursor: pointers; 
+    font-weight: bold;  
+    }
+    .register{
+        border: 2px solid black;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .text-content{
+        text-align: left;
+    }
+    .main-paragraph,
+    .heading{
+        text-align: left;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .heading{
+        margin-top: 15%;
+        font-size: 4.7rem;
+    }
+    .main-paragraph{
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+        font-weight: bold;
+        color: var(--mediumGray);
+    }
+    .hero-content{
+        order: 1;   
+    }
+    .cta-btn{
+    background-color: var(--almostBlack);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    left: 0;
+    }
+    .clients-logos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20%;
+    }
+    .clients-logos img{
+    width: 25%;
+    padding-right: 20px;
+    
+    }
 }
